@@ -75,3 +75,9 @@ void loop()
 	CFangleY = AA * (CFangleY + rate_gyr_y * (dT / 1000000)) + (1 – AA) * AccYangle;
 	CFangleZ = AA * (CFangleZ + rate_gyr_z * (dT / 1000000)) + (1 – AA) * AccZangle;
 }
+
+int main (void)
+{
+	setup();
+	loop();
+}
